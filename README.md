@@ -1,5 +1,6 @@
 # Full stack twitter.
- Teck Stack Used🔥
+
+=> Teck Stack Used🔥
 - React
 - Node
 - Tailwind
@@ -8,18 +9,22 @@
 => Env File
    - Add an env file with the following variables 
    ```javascript
-      CUSTOMER_JWT_SECRET = JWT_SECRET_FOR_CUSTOMERS
-      ADMIN_JWT_SECRET = JWT_SECRET_FOR_ADMIN
-      RAZOR_API_KEY = RAZOR_PYA_API_KEY
-      RAZOR_SECRET_KEY = RAZOR_PAY_SECRET_KEY
-      MONGODB_URL = MONGODB_URL_FOR_CONNECTION
-      ADMIN_PORT = PORT_ON_WHICH_ADMIN_DASHBOARD_IS_RUNNING
-      CLIENT_PORT = PORT_IN_WHICH_CLIENT_APPLICATIONS_IS_RUNNING
+      PORT = BACKEND_PORT
+      TWITTER_JWT_SECRET = JWT_SECRET_KEY
+      MONGO_DB_URL = MONGO_DB_ATLAS_CONNECTION_URL
+      DB_NAME = DB_NAME
+      FRONTEND_ORIGIN = FRONTEND_ORIGIN
+      IMAGE_ASSETS = IMAGE_ACCESS_STATIC_LINK
+      IMAGE_AND_VIDEO_ASSETS = IMAGE_AND_VIDEO_ACCESS_STATIC_LINK
+      VIDEO_ASSETS = VIDEO_ACCESS_STATIC_LINK
+      ACCESS_IMAGE = IMAGE_FOLDER_ROOT_LOCATION
+      ACCESS_VIDEO = VIDEO_FOLDER_ROOT_LOCATION
+      ACCESS_IMAGE_AND_VIDEO = IMAGE_AND_VIDEO_FOLDER_ROOT_LOCATION
    ```
 
 => How To Run ...🏃...
 - Download and Unzip The File / Clone the repo
-- follow installation guide mentioned below
+- Follow the installation guide mentioned below
 
 => Code For Installing Packages 📦
 ```javascript
@@ -33,17 +38,13 @@
       npm i
       npm start
       
-      #For Admin
-      cd admin
+      #For Analysis
+      cd analysis
       npm i
       npm start
 ```
 => Application Demo  
 <div align="center">
- 
-
-https://github.com/Znoy108x/MERN-FurnitureSite/assets/75539409/998b1a4d-677d-426b-8043-9f271307825c
-
 
 </div>
 <pre>
