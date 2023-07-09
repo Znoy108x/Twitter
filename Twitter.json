@@ -1,0 +1,706 @@
+{
+	"info": {
+		"_postman_id": "0580f767-5755-4580-953e-a69c98f783dc",
+		"name": "Twitter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\" : \"Abhay Bisht\",\r\n    \"UserName\" : \"2002AbhayBisht\",\r\n    \"Email\" : \"abhay@gmail.com\",\r\n    \"Password\" : \"Abhay Rawat\",\r\n    \"Country\" : \"India\", \r\n    \"State\" : \"Haryana\",\r\n    \"City\" :  \"Faridabad\", \r\n    \"Following\" : [], \r\n    \"Followers\" : [],\r\n    \"Image\" : \"\",\r\n    \"Banner\" : \"\",\r\n    \"Bio\" : \"\", \r\n    \"Joining\" : \"\",\r\n    \"Google\" : false,\r\n    \"Apple\" : false\r\n}\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/email-register-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"email-register-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\" : \"abhayb2002@gmail.com\",\r\n    \"Password\" : \"Abhay Bisht\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/email-login-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"email-login-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Image Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "User",
+							"value": "63d2c7a3c40723965e7d4b95",
+							"type": "default"
+						},
+						{
+							"key": "Description",
+							"value": "Hello twitter family ! This is my first tweet",
+							"type": "default"
+						},
+						{
+							"key": "Image",
+							"type": "file",
+							"src": "/C:/Users/Hp/Desktop/wallpapers/benjamin-voros-phIFdC6lA4E-unsplash.jpg"
+						},
+						{
+							"key": "Tags",
+							"value": "[\"#Beginner\" , \"#Code1\" , \"#Coder2\"]",
+							"type": "default"
+						},
+						{
+							"key": "Likes",
+							"value": "0",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/add-image-post",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"add-image-post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Video Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "User",
+							"value": "63d2c7a3c40723965e7d4b95",
+							"type": "default"
+						},
+						{
+							"key": "Description",
+							"value": "Hello twitter family ! This is my first tweet",
+							"type": "default"
+						},
+						{
+							"key": "Video",
+							"type": "file",
+							"src": "/C:/Users/Hp/Desktop/github.mp4"
+						},
+						{
+							"key": "Tags",
+							"value": "[\"#Single\" , \"#Coder\" , \"#Smart\"]",
+							"type": "default"
+						},
+						{
+							"key": "Likes",
+							"value": "0",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base}}/add-video-post",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"add-video-post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Image Video Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "User",
+							"value": "63d013978915a80109996f3a",
+							"type": "default"
+						},
+						{
+							"key": "Image",
+							"type": "file",
+							"src": "/C:/Users/Hp/Desktop/wallpapers/brian-mcgowan-0A450BR1JWk-unsplash.jpg"
+						},
+						{
+							"key": "Video",
+							"type": "file",
+							"src": "/C:/Users/Hp/Desktop/github.mp4"
+						},
+						{
+							"key": "Description",
+							"value": "Hello twitter familt !",
+							"type": "text"
+						},
+						{
+							"key": "Tags",
+							"value": "[\"#Coder\" , \"#Programmer\" , \"#ProblemSolver\"]",
+							"type": "default"
+						},
+						{
+							"key": "Likes",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base}}/add-image-video-post",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"add-image-video-post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "UserID",
+							"value": "63d0f955de344188dd01852a",
+							"type": "default"
+						},
+						{
+							"key": "Name",
+							"value": "Ash",
+							"type": "default"
+						},
+						{
+							"key": "UserName",
+							"value": "1989AshGodson",
+							"type": "default"
+						},
+						{
+							"key": "Country",
+							"value": "Hindustan",
+							"type": "default"
+						},
+						{
+							"key": "City",
+							"value": "Faridabad",
+							"type": "default"
+						},
+						{
+							"key": "State",
+							"value": "Haryana",
+							"type": "default"
+						},
+						{
+							"key": "Bio",
+							"value": "Hello ashgod son ( Christian )",
+							"type": "default"
+						},
+						{
+							"key": "Image",
+							"type": "file",
+							"src": "/C:/Users/Hp/Desktop/wallpapers/Chibi Saraswati by In-Sine on DeviantArt.jpg"
+						},
+						{
+							"key": "Banner",
+							"type": "file",
+							"src": "/C:/Users/Hp/Desktop/wallpapers/abhay.jpg"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/update-profile",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"update-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "To Follow Choise",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\" : \"63d0fb4f450c11d72492d6b6\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/to-follow-users",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"to-follow-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Follow User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\" : \"63d3ea22f4d594cf089f3cb2\",\r\n    \"to\" : \"63d4b21f19c689a24c30f2bc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/follow-user",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"follow-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unfollow User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\" : \"63d1fd4b35d931c1cc71b52e\",\r\n    \"to\" : \"63d0fb4f450c11d72492d6b6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/unfollow-user",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"unfollow-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/63d4b21f19c689a24c30f2bc",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"63d4b21f19c689a24c30f2bc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/all-users",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"all-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/posts/63d3ea22f4d594cf089f3cb2",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"posts",
+						"63d3ea22f4d594cf089f3cb2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/post/like/63d2c7a3c40723965e7d4b95/63d2ca8392743d728d26e8ea",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"post",
+						"like",
+						"63d2c7a3c40723965e7d4b95",
+						"63d2ca8392743d728d26e8ea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/all-posts",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"all-posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bookmark Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/post/bookmark/63d2c7a3c40723965e7d4b95/63d2ca8392743d728d26e8ea",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"post",
+						"bookmark",
+						"63d2c7a3c40723965e7d4b95",
+						"63d2ca8392743d728d26e8ea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Tags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/all-tags",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"all-tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post By Tag",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/post/India",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"post",
+						"India"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trending",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/trending",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"trending"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Text Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "User",
+							"value": "63d2c7a3c40723965e7d4b95",
+							"type": "default"
+						},
+						{
+							"key": "Description",
+							"value": "This is INDIA",
+							"type": "default"
+						},
+						{
+							"key": "Tags",
+							"value": "[\"#WoW\" , \"#India\"]",
+							"type": "default"
+						},
+						{
+							"key": "Likes",
+							"value": "0",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base}}/add-text-post",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"add-text-post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Is Following",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\" : \"63d3ea22f4d594cf089f3cb2\",\r\n    \"to\" : \"63d4b21f19c689a24c30f2bc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/is-following",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"is-following"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Mark Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/bookmark/63d64725aa03d0daf674c804/63d4b24219c689a24c30f41b",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"bookmark",
+						"63d64725aa03d0daf674c804",
+						"63d4b24219c689a24c30f41b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Bookmarks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/all-bookmarks/63d4b24219c689a24c30f41b",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"all-bookmarks",
+						"63d4b24219c689a24c30f41b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/postData/63d64725aa03d0daf674c804",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"postData",
+						"63d64725aa03d0daf674c804"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Bookmark",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/remove-bookmark/63d64725aa03d0daf674c804/63d4b24219c689a24c30f41b",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"remove-bookmark",
+						"63d64725aa03d0daf674c804",
+						"63d4b24219c689a24c30f41b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/like-post/63d3ea22f4d594cf089f3cb2/63d4ae121e589e49c10ea5cd",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"like-post",
+						"63d3ea22f4d594cf089f3cb2",
+						"63d4ae121e589e49c10ea5cd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

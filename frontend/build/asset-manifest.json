@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8495eeff.css",
+    "main.js": "/static/js/main.362ce433.js",
+    "static/media/twitter-banner.png": "/static/media/twitter-banner.ee316e0d2358e67d5ee2.png",
+    "static/media/nouser.jpg": "/static/media/nouser.749667cc5449de2b9786.jpg",
+    "static/media/no-media.png": "/static/media/no-media.389166bb7aa002f22a60.png",
+    "static/media/bookmark.png": "/static/media/bookmark.7180438db72fc10aa126.png",
+    "static/media/no-retweets.png": "/static/media/no-retweets.de5767b17872b8b4f526.png",
+    "static/media/no-followers.png": "/static/media/no-followers.0891edb93b6fcc2382a4.png",
+    "static/media/twitter2.png": "/static/media/twitter2.03a9876ba5bca43d6c0f.png",
+    "index.html": "/index.html",
+    "main.8495eeff.css.map": "/static/css/main.8495eeff.css.map",
+    "main.362ce433.js.map": "/static/js/main.362ce433.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8495eeff.css",
+    "static/js/main.362ce433.js"
+  ]
+}
