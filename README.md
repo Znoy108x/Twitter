@@ -8,7 +8,7 @@
 
 => Env File
    - Add an env file with the following variables 
-   ```
+   ```python
       PORT = BACKEND_PORT
       TWITTER_JWT_SECRET = JWT_SECRET_KEY
       MONGO_DB_URL = MONGO_DB_ATLAS_CONNECTION_URL
@@ -27,7 +27,7 @@
 - Follow the installation guide mentioned below
 
 => Code For Installing Packages 📦
-```javascript
+```python
       #For Frontend
       cd frontend
       npm i
@@ -40,8 +40,12 @@
       
       #For Analysis
       cd analysis
-      npm i
-      npm start
+      pip install numpy
+      pip install pandas
+      pip install streamlit
+      pip install plotly
+      pip install countryInfo
+      pip install requests
 ```
 => Application Demo  
 <div align="center">
