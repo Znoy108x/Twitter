@@ -1,4 +1,4 @@
-# Full stack twitter.
+# Full stack Twitter 🐦.
 
 => Teck Stack Used🔥
 - React
@@ -49,6 +49,14 @@
 ```
 => Application Demo  
 <div align="center">
+
+
+https://github.com/Znoy108x/MERN-Twitter/assets/75539409/1387c167-488a-4fee-8dca-cf5c04e89540
+
+
+
+https://github.com/Znoy108x/MERN-Twitter/assets/75539409/fe44ea98-a0ed-495b-869d-0965c828ed29
+
 
 </div>
 <pre>
