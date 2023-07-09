@@ -8,7 +8,7 @@
 
 => Env File
    - Add an env file with the following variables 
-   ```javascript
+   ```
       PORT = BACKEND_PORT
       TWITTER_JWT_SECRET = JWT_SECRET_KEY
       MONGO_DB_URL = MONGO_DB_ATLAS_CONNECTION_URL
